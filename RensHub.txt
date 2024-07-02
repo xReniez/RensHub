@@ -88,5 +88,5 @@ if game.placeId == 2788229376 or game.placeId == 7213786345 or  game.placeId == 
     DHstartup()
 end
 
-task.wait(3)
+task.wait(2)
 glob()
