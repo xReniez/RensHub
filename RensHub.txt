@@ -95,14 +95,14 @@ if game.placeId == 2788229376 or game.placeId == 7213786345 or game.placeId == 1
     DHstartup()
 end
 
--- inf yield games
-if game.placeId == 4483381587 or game.placeId == 17390083917 or 15546218972 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end
+-- inf yield games 
+--if game.placeId == 4483381587 or game.placeId == 17390083917 or 15546218972 then
+--    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+--end
 
 -- Sharkbite 2
-if game.placeId == 8908228901 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Lolboxo/name/main/SourceSharkbite2'))()
-end
+--if game.placeId == 8908228901 then
+--loadstring(game:HttpGet('https://raw.githubusercontent.com/Lolboxo/name/main/SourceSharkbite2'))()
+--end
 
 glob() -- emotes, chatlogs
