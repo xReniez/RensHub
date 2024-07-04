@@ -1,6 +1,4 @@
 local function glob()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))() -- emotes
-    task.wait(1)
     --This script reveals ALL hidden messages in the default chat
 --chat "/e spy" to toggle!
 enabled = true
@@ -67,6 +65,9 @@ wait(3)
 local chatFrame = player.PlayerGui.Chat.Frame
 chatFrame.ChatChannelParentFrame.Visible = true
 chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+
+task.wait(2)
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))() -- emotes
 end
 
 local function DHstartup()
@@ -78,14 +79,26 @@ local function DHstartup()
     if err then
         warn(err.." DH script failed to load, site may be down..")
     end
-
-   -- loadstring(game:HttpGet('https://raw.githubusercontent.com/DaddySenpaiii/GameCode/main/bleh'))()
 end
 
+if not game:IsLoaded() then
+ game.Loaded:Wait()
+end
+
+-- dh games
 if game.placeId == 2788229376 or game.placeId == 7213786345 or  game.placeId == 16033173781 then
     task.wait(1)
     DHstartup()
 end
 
-task.wait(2)
-glob()
+-- inf yield games
+if game.placeId == 4483381587 or game.placeId == 17390083917 or 15546218972 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end
+
+-- Sharkbite 2
+if game.placeId == 8908228901 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Lolboxo/name/main/SourceSharkbite2'))()
+end
+
+glob() -- emotes, chatlogs
