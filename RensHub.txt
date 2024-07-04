@@ -91,13 +91,13 @@ if not game:IsLoaded() then
 end
 
 -- dh games
-if game.placeId == 2788229376 or game.placeId == 7213786345 or  game.placeId == 16033173781 then
+if game.placeId == 2788229376 or game.placeId == 7213786345 or game.placeId == 16033173781 then
     DHstartup()
 end
 
 -- inf yield games
 if game.placeId == 4483381587 or game.placeId == 17390083917 or 15546218972 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end
 
 -- Sharkbite 2
