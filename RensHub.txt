@@ -73,7 +73,12 @@ end
 local function DHstartup()
 
     local success, err = pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/DaddySenpaiii/GameCode/main/bleh'))()
+        AntiKeybind = "x"
+        AntiType = "Sky" --<< Sky, Under, Desync >>--
+        AimViewerKeybind = "]"
+        AimViewerColor = Color3.fromRGB(255,0,0)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/wenny69420/anti/main/wenny7043'))()
+        loadstring(game:HttpGet("https://nyulachan.github.io/nyula/Nyula/nyula", true))()
     end)
 
     if err then
@@ -87,7 +92,6 @@ end
 
 -- dh games
 if game.placeId == 2788229376 or game.placeId == 7213786345 or  game.placeId == 16033173781 then
-    task.wait(1)
     DHstartup()
 end
 
